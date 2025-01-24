@@ -1,10 +1,4 @@
-local OrionWindows = {}
-function OrionWindows:Create(UiName1)
-	-- Gui to Lua
-	-- Version: 3.2
-
-	-- Instances:
-	local Players = game:GetService("Players")
+local Players = game:GetService("Players")
     local TweenService = game:GetService("TweenService")
 	local Orion = Instance.new("ScreenGui")
 	local MainBackground1 = Instance.new("Frame")
@@ -348,6 +342,7 @@ function OrionWindows:Create(UiName1)
 	ToggleTemplate.BorderSizePixel = 0
 	ToggleTemplate.Position = UDim2.new(8.33091889e-08, 0, 0, 0)
 	ToggleTemplate.Size = UDim2.new(1.01824355, 0, 0.0136399772, 0)
+	ToggleText.Parent = ToggleTemplate
 	ToggleTemplate.Visible = false
 
 	Corner_2.CornerRadius = UDim.new(0, 13)
@@ -359,7 +354,6 @@ function OrionWindows:Create(UiName1)
 	Aspect_2.AspectRatio = 5.652
 
 	ToggleText.Name = "ToggleText"
-	ToggleText.Parent = ToggleTemplate
 	ToggleText.AnchorPoint = Vector2.new(0.5, 0.5)
 	ToggleText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	ToggleText.BackgroundTransparency = 1.000
@@ -665,4 +659,3 @@ function OrionWindows:Create(UiName1)
 	end	
 	
 	return Section1
-end
